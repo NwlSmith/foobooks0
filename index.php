@@ -22,7 +22,7 @@ require 'logic.php';
         <input type='text' name='searchTerm' value='<?php if (isset($searchTerm)) echo $searchTerm ?>'>
     </label>
     <label>
-        <input type='checkbox' name='caseSensitive'>
+        <input type='checkbox' name='caseSensitive' <?php if(isset($caseSensitive) and $caseSensitive) echo 'checked' ?>>
         Case sensitive
     </label>
     <input type='submit' value='Search'>

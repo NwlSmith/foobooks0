@@ -6,6 +6,7 @@ if(isset($_SESSION['results'])) {
     $books = $results['books'];
     $searchTerm = $results['searchTerm'];
     $bookCount = $results['bookCount'];
+    $caseSensitive = $results['caseSensitive'];
 }
 
 $_SESSION['results'] = null;
